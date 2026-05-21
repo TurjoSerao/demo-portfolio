@@ -1,8 +1,16 @@
-// Get date and time
+function updateDateTime() {
+  const now = new Date();
 
-const now = new Date();
-const time = now.toLocaleTimeString();
-const date = now.toDateString()
+  // Time & Date
+  const time = now.toLocaleTimeString();
+  const date = now.toDateString();
 
-document.getElementById('time').innerHTML = time;
-document.getElementById('date').innerHTML = date;
+  // Display
+  document.getElementById("time").innerHTML = time;
+  document.getElementById("date").innerHTML = date;
+}
+
+// Run immediately
+updateDateTime();
+// Update every second
+setInterval(updateDateTime, 1000);

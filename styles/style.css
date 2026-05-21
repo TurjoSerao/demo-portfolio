@@ -1,142 +1,160 @@
 /* Fonts */
 @font-face {
-    font-family: 'Anton';
-    src: url('../assets/fonts/Anton-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Anton";
+  src: url("../assets/fonts/Anton-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto Slab';
-    src: url('../assets/fonts/RobotoSlab-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto Slab";
+  src: url("../assets/fonts/RobotoSlab-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .font-color {
-    color: #25343F;
+  color: #25343f;
 }
 
 .bg-color {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .accent-bg {
-    background-color: #FF9B51;
+  background-color: #ff9b51;
 }
 
 /*  */
 hr {
-    height: 3px;
-    width: 5%;
-    background-color: #FF9B51;
+  height: 5px;
+  width: 5%;
+  background-color: #ff9b51;
 }
 
 .orangered {
-    color: #FF9B51;
+  color: #ff9b51;
 }
 
 .outline-text {
-    font-size: 90px !important;
-    color: white;
-    -webkit-text-stroke: 2px #25343F;
+  font-size: 90px !important;
+  color: white;
+  -webkit-text-stroke: 2px #25343f;
 }
 
 .outline-text:hover {
-    color: #FF9B51;
-    -webkit-text-stroke: 2px #25343F;
+  color: #ff9b51;
+  -webkit-text-stroke: 2px #25343f;
 }
 
 /* Button Style Primary */
 .btn-primary {
-    padding: 10px 25px;
-    border: 0;
-    border-radius: 10px;
-    
-    background: #25343F;
-    color: white;
-    font-weight: 600;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 10px;
+
+  background: #25343f;
+  color: white;
+  font-weight: 600;
 }
 
 .btn-primary:hover {
-    background: #FF9B51;
-    color: #ffffff;
-    transition-duration: 0.4s;
+  background: #ff9b51;
+  color: #ffffff;
+  transition-duration: 0.4s;
 }
 
 .btn-secondary {
-    padding: 10px 25px;
-    border: 0;
-    border-radius: 10px;
-    border: 2px solid #25343F;
-    background-color: transparent;
-    color: #25343F;
-    font-weight: 600;
-    transition-duration: 0.4s;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 10px;
+  border: 2px solid #25343f;
+  background-color: transparent;
+  color: #25343f;
+  font-weight: 600;
+  transition-duration: 0.4s;
 }
 
 .btn-secondary:hover {
-
-    background: #FF9B51;
-    border: 2px solid #FF9B51;
-    color: white;
-    font-weight: 600;
+  background: #ff9b51;
+  border: 2px solid #ff9b51;
+  color: white;
+  font-weight: 600;
 }
 
 .hero-section {
-    min-height: 80vh;
+  min-height: 80vh;
 }
 
 /* Keep desktop style */
 .hero-heading {
-    font-size: 90px;
+  font-size: 90px;
 }
 
 .time-box {
-    width: 350px;
-    position: relative;
-    background: #25343F;
-    color: #ffffff !important;
-    border: 2px solid #25343F;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    transition: 0.5s;
+  width: 350px;
+  position: relative;
+  background: #25343f;
+  color: #ffffff !important;
+  border: 2px solid #25343f;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: 0.5s;
 }
 
 .time-box:hover {
-    background: white;
-    border: 2px solid #25343F;
-    color: #25343F !important;
+  background: white;
+  border: 2px solid #25343f;
+  color: #25343f !important;
 }
 
-.fa-brands {
-    /* background: red; */
+.footer-text {
+  max-width: 500px;
+}
+
+.card {
+  background-color: white;
+  transition: 0.4s;
+}
+
+.card:hover {
+  background-color: #25343f;
+  color: white;
+}
+
+.service-card {
+    background-color: white;
+    transition:0.4s;
+}
+
+.service-card:hover{
+    background-color: #25343f;
+    color: white;
 }
 
 /* Responsive typography */
 @media (max-width: 768px) {
+  .hero-heading {
+    font-size: 40px;
+  }
 
-    .hero-heading {
-        font-size: 40px;
-    }
+  .outline-text {
+    font-size: 40px !important;
+  }
 
-    .outline-text {
-        font-size: 40px !important;
-    }
+  .hero-text {
+    font-size: 16px;
+    padding: 0 10px;
+  }
 
-    .hero-text {
-        font-size: 16px;
-        padding: 0 10px;
-    }
-
-    .hero-section {
-        min-height: 60vh;
-    }
-    footer{
-        text-align: center !important;
-    }
+  .hero-section {
+    min-height: 60vh;
+  }
+  .footer-text {
+    max-width: 100%;
+  }
 }
