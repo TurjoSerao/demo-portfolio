@@ -15,26 +15,38 @@
     font-display: swap;
 }
 
+.font-color {
+    color: #25343F;
+}
+
+.bg-color {
+    background-color: #f1f1f1;
+}
+
+.accent-bg {
+    background-color: #FF9B51;
+}
+
 /*  */
 hr {
     height: 3px;
     width: 5%;
-    background-color: orangered;
+    background-color: #FF9B51;
 }
 
 .orangered {
-    color: orangered;
+    color: #FF9B51;
 }
 
 .outline-text {
     font-size: 90px !important;
     color: white;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px #25343F;
 }
 
 .outline-text:hover {
-    color: orangered;
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    color: #FF9B51;
+    -webkit-text-stroke: 2px #25343F;
 }
 
 /* Button Style Primary */
@@ -42,14 +54,15 @@ hr {
     padding: 10px 25px;
     border: 0;
     border-radius: 10px;
-    background: #000;
+    
+    background: #25343F;
     color: white;
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background: orangered;
-    color: #000;
+    background: #FF9B51;
+    color: #ffffff;
     transition-duration: 0.4s;
 }
 
@@ -57,15 +70,17 @@ hr {
     padding: 10px 25px;
     border: 0;
     border-radius: 10px;
-    background: orangered;
-    color: black;
+    border: 2px solid #25343F;
+    background-color: transparent;
+    color: #25343F;
     font-weight: 600;
     transition-duration: 0.4s;
 }
 
 .btn-secondary:hover {
 
-    background: black;
+    background: #FF9B51;
+    border: 2px solid #FF9B51;
     color: white;
     font-weight: 600;
 }
@@ -82,16 +97,24 @@ hr {
 .time-box {
     width: 350px;
     position: relative;
-    background: white;
+    background: #25343F;
+    color: #ffffff !important;
+    border: 2px solid #25343F;
     top: -80px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+    transition: 0.5s;
 }
 
 .time-box:hover {
-    background: orangered;
-    color: black !important;
+    background: white;
+    border: 2px solid #25343F;
+    color: #25343F !important;
+}
+
+.fa-brands {
+    /* background: red; */
 }
 
 /* Responsive typography */
@@ -109,7 +132,11 @@ hr {
         font-size: 16px;
         padding: 0 10px;
     }
+
     .hero-section {
-    min-height: 60vh;
-}
+        min-height: 60vh;
+    }
+    footer{
+        text-align: center !important;
+    }
 }
