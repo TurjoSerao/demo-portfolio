@@ -93,24 +93,6 @@ hr {
   font-size: 90px;
 }
 
-.time-box {
-  width: 350px;
-  position: relative;
-  background: #25343f;
-  color: #ffffff !important;
-  border: 2px solid #25343f;
-  top: -80px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  transition: 0.5s;
-}
-
-.time-box:hover {
-  background: white;
-  border: 2px solid #25343f;
-  color: #25343f !important;
-}
 
 .footer-text {
   max-width: 500px;
@@ -128,12 +110,29 @@ hr {
 
 .service-card {
     background-color: white;
-    transition:0.4s;
+    transition:0.4s ease;
 }
 
 .service-card:hover{
     background-color: #25343f;
     color: white;
+}
+
+.client-img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.featured-card {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  z-index: 2;
+  position: relative;
+}
+.featured-card:hover {
+  transform: scale(1.08);
 }
 
 /* Responsive typography */
@@ -153,6 +152,9 @@ hr {
 
   .hero-section {
     min-height: 60vh;
+  }
+  .featured-card {
+    transform: none;
   }
   .footer-text {
     max-width: 100%;
