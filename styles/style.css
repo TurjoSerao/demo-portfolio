@@ -30,7 +30,8 @@
 /*  */
 hr {
   height: 5px;
-  width: 5%;
+  width: 10%;
+  border: 0;
   background-color: #ff9b51;
 }
 
@@ -130,10 +131,21 @@ hr {
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   z-index: 2;
   position: relative;
+  background-color: #25343f;
+  color: white;
 }
 .featured-card:hover {
   transform: scale(1.08);
+  background-color: white;
+  color: #25343f;
 }
+
+.page-title-container{
+  height: 250px;
+  background: #25343f;
+  color: #f1f1f1;
+}
+
 
 /* Responsive typography */
 @media (max-width: 768px) {
